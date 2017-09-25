@@ -25,14 +25,13 @@ public class Practice07SetUnderlineTextView extends View {
 
     {
         paint.setTextSize(60);
-
+        paint.setUnderlineText(true);
         // 使用 Paint.setUnderlineText() 来设置下划线
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
         canvas.drawText(text, 50, 100, paint);
     }
 }
